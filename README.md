@@ -1,2 +1,2 @@
-# genetics-game
+# genetics-game.github.io
 20 time project
