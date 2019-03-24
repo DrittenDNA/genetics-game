@@ -48,6 +48,20 @@ li {
     font-size: 20px;
 }
   
+.layered-image {
+  position: relative;
+}
+.layered-image img {
+  height: 200px;
+  width: 300px;
+}
+.image-overlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  opacity: .4
+}
+  
 #mydiv {
   position: absolute;
   z-index: 9;
@@ -80,6 +94,11 @@ li {
   <p>=^w^=</p>
 </div>
 
+<div class="layered-image">
+  <img class="image-base" src="Transparent_Rainbow_Free_Clipart.png" alt="rainbow">
+  <img class="image-overlay" src="2ZPZNa-cat-free-download.png" alt="cat">
+</div>
+ 
 <script>
 /*code from w3schools.com*/
 //Make the DIV element draggagle:
