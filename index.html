@@ -69,6 +69,12 @@ li {
   border: 1px solid #d3d3d3;
 }
 
+#myimagediv {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+}
+
 #mydivheader {
   padding: 10px;
   cursor: move;
@@ -93,7 +99,7 @@ li {
   <p>=^w^=</p>
 </div>
 
-<div class="layered-image">
+<div class="layered-image" id="myimagediv">
   <img class="image-base" src="Transparent_Rainbow_Free_Clipart.png" alt="rainbow">
   <img class="image-overlay" src="2ZPZNa-cat-free-download.png" alt="cat">
 </div>
@@ -102,6 +108,7 @@ li {
 /*code from w3schools.com*/
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("myimagediv"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
