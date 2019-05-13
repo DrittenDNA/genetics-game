@@ -106,6 +106,197 @@ li {
 .filterDetail {
   font-family: "Consolas", "Menlo", "Ubuntu Mono", monospace;
 }
+  
+.buttonL {
+    background-color: #f0c497;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonM {
+    background-color: #bd7e39;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonD {
+    background-color: #422915;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonB {
+    background-color: #92b8e2;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonG {
+    background-color: #66f805;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonML {
+    background-color: #d8a069;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonMD {
+    background-color: #84532b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.lines{
+	position: absolute;
+	margin-left: 4%;
+	margin-top: 7%;
+  display:block;
+  height:50%;
+	visibility:hidden;
+  z-index: 0;
+}
+.bbase{
+	position: absolute;
+	margin-left: 4%;
+	margin-top: 7%;
+  display:block;
+  height:50%;
+	visibility:visible;
+  z-index: -1;
+}
+.pattern{
+	position: absolute;
+	margin-left: 4%;
+	margin-top: 7%;
+  display:block;
+  height:50%;
+	visibility:hidden;
+  z-index: 1;
+}
+.pbutton{
+	position: relative;
+  visibility: visible;
+  display:inline-block;
+  height:20%;
+}
+.undCons{
+	position: relative;
+  visibility: visible;
+  display:inline-block;
+  height:20%;
+}
+.xbutton{
+	position: relative;
+  visibility: visible;
+  display:inline-block;
+  height:10%;
+}
+.dropbtnB:hover, .dropbtnB:focus {
+    background-color: #a0eff8;
+}
+.dropdownB {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-contentB {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-contentB button {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdownB button:hover {background-color: #f1f1f1}
+.showB {display:block;}
+.dropbtn {
+    background-color: #6ce7f4;
+    color: black;
+    padding: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #a0eff8;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eeeeee;
+    min-width: 60px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content button {
+    padding: 12px 16px;
+		min-width: 84px;
+		display: block;
+}
+.dropdown button:hover {background-color: #f1f1f1}
+.show {display:block;}
+table, th, td {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
 </style>
 <body>
 
@@ -123,6 +314,51 @@ li {
   <p>=^w^=</p>
 </div>
 
+  
+  <body>
+
+<h2>Blorp Maker</h2>
+
+			<img src="blorp-base.png" alt="blorp-base" class="bbase" id="bb">
+			<img src="blorp-face.png" alt="blorp-face" class="lines" id="bf">
+			<img src="blorp-outline.png" alt="blorp-outline" class="lines" id="bo">
+			<img src="blorp-pattern-1.png" alt="blorp-pattern-1" class="base" id="bp1">
+			<img src="blorp-pattern-2.png" alt="blorp-pattern-2" class="base" id="bp2">
+			<img src="blorp-pattern-3.png" alt="blorp-pattern-3" class="base" id="bp3">
+			<img src="blorp-pattern-4.png" alt="blorp-pattern-4" class="base" id="bp4">
+
+
+	<div style = "margin-left: 26%; margin-top: 6%; width: 211px; display: inline-block; position: absolute;">
+
+
+				<div class="dropdownB">
+				<button onclick="myFunctionB()" class="dropbtn">Pattern</button>
+				  <div id="myDropdownB" class="dropdown-content">
+				    <button onclick="showPattern()">Pattern</button>
+
+				  </div>
+				</div>
+
+	      <div style="border: 5px solid #aaaaaa; width:200px; height:400px; display:block;"  id="adiv0">
+				</div>
+	      <div style="border: 5px solid #aaaaaa; width:200px; height:400px; display:none;"  id="patternDiv">
+					<button name = "SB" id = "b1" onclick="p1()" type="button" class="button1">Pattern 1</button>
+					<button name = "SB" id = "b2" onclick="p2()" type="button" class="button2">Pattern 2</button>
+					<button name = "SB" id = "b3" onclick="p3()" type="button" class="button3">Pattern 3</button>
+					<button name = "SB" id = "b4" onclick="p4()" type="button" class="button4">Pattern 4</button>
+				</div>
+</div>
+<div style = "margin-left: 44%; margin-top: 6%; width: 211px; display: inline-block; position: absolute;">
+				
+</div>
+  <div style = "border: 5px solid #6ce7f4; margin-left: 62%; margin-top: 11%; width: 211px; height:400px; display: inline-block; position: absolute;">
+    <div style = "border: 5px solid transparent; font-family: verdana; display: inline-block; position: absolute;">
+			<span style="color: #222222; font-size: 22px;"><b>Click on one of the dropdown menus and choose a category. Then click on one of the options and customize the blorp!
+			<br><br>Name your character:<input type "text" name= "baseinput" id="myText"><input type= "button" value="Submit" onclick="getTextInput()"></b></span>
+	  </div>
+	</div>
+  
+  
 <div class="layered-image" id="myimagediv">
   <img class="image-base" src="Transparent_Rainbow_Free_Clipart.png" alt="rainbow">
   <img class="image-overlay" src="2ZPZNa-cat-free-download.png" alt="cat">
@@ -540,7 +776,86 @@ $(document).ready(() => {
     $('.lossDetail').html(`Loss: ${result.loss.toFixed(1)}. <b>${lossMsg}</b>`);
   });
 });
- 
+  
+  
+  
+
+var baseA = ["bb", "bf", "bo"];
+var patternA = ["bp1", "bp2", "bp3", "bp4"];
+function dosomething(){
+  alert("it worked");
+}
+	function getTextInput(){
+	  var input = document.getElementById("myText").value;
+	  document.getElementById("myName").innerHTML = "<br />" + "<b>"+input+"</b>";
+	}
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunctionB() {
+    document.getElementById("myDropdownB").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdownsB = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdownsB.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdownB.classList.contains('show')) {
+        openDropdownB.classList.remove('show');
+      }
+    }
+  }
+}
+}
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function showPattern() {
+  document.getElementById("patternDiv").style.display="block";
+}
+function buttonF(varA,show){
+	for (var i = 0; i < varA.length; i += 1){
+		document.getElementById(varA[i]).style.visibility = "hidden";
+	}
+  document.getElementById(varA[show]).style.visibility = "visible";
+}
+function patternButtonf1(){
+	buttonF(patternA,2);
+}
+function patternButtonf2(){
+	buttonF(patternA,1);
+}
+function patternButtonf3(){
+	buttonF(patternA,0);
+}
+function patternButtonf4(){
+	buttonF(patternA,3);
+}
+function buttonXF(varA){
+	for (var i = 0; i < varA.length; i += 1){
+		document.getElementById(varA[i]).style.visibility = "hidden";
+	}
+}
+function patternXf(){
+	buttonXF(patternA);
+}
+  
 </script>
 <script type="indexjs.js">
 </script>
